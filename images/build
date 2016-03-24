@@ -5,7 +5,7 @@ set -e
 pcfdev_dir=$(cd `dirname $0` && cd .. && pwd)
 images_dir=$pcfdev_dir/images
 
-output_dir=$images_dir/base/output
+output_dir=$images_dir/output
 mkdir -p "$output_dir"
 rm -rf "$output_dir"/output-*
 
