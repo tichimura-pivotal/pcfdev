@@ -12,6 +12,7 @@ rm -rf "$output_dir"/output-*
 "$pcfdev_dir/bosh/setup-packer" "$output_dir/packer-bosh"
 
 releases='diego cf garden-linux etcd'
+"$pcfdev_dir/bosh/clone-releases"
 "$pcfdev_dir/bosh/build" "$output_dir/assets" $releases
 
 cp -a "$images_dir"/{http,scripts} "$output_dir/"
