@@ -223,6 +223,7 @@
                 "apt-get -y clean",
                 "/var/pcfdev/snapshot local.pcfdev.io",
                 "/var/pcfdev/reset",
+                "rm -rf $HOME/.cf",
                 "chmod 1777 /tmp"
             ]
         },
