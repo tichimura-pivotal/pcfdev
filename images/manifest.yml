@@ -413,6 +413,14 @@ properties:
     port: 5524
     roles:
     - {name: uaaadmin, password: admin, tag: admin}
+  mysql:
+    host: localhost
+    port: 3307
+    user: admin
+    password: admin
+    db: ccdb
+    username: admin
+    password: admin
   databases:
     port: 5524
     databases:
