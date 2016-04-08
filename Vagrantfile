@@ -1,8 +1,8 @@
 Vagrant.configure("2") do |config|
   Vagrant.require_version ">= 1.8"
 
-  config.vm.box = "pcfdev/oss"
-  config.vm.box_version = "0"
+  config.vm.box = "pcfdev/pcfdev"
+  config.vm.box_url = "some-box-url"
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
@@ -112,7 +112,7 @@ def calculate_resource_allocation
     max_memory = 4096
   end
 
-  memory ||= [[2048, max_memory / 2].max, 4096].min
+  memory ||= [[2048, max_memory / 2].max, 10240].min
 
   {memory: memory / 4 * 4, cpus: cpus, max_memory: max_memory}
 end
