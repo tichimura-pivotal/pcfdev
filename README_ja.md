@@ -78,7 +78,8 @@ PCF Devを完全に削除する場合:
 
 ## プロジェクトに関わりたい方へ
 
-PCF Devについて貢献したいと思っている方、是非こちらをご参照下さい [contributing guidelines](CONTRIBUTING.md) 。 またオープンソース版についてはこちらに詳細の記載があります。[development instructions](DEVELOP.md)。日本語版はこちら[オープンソースをベースとしたPCF Devの立ち上げ](DEVELOP.ja.md)
+PCF Devについて貢献したいと思っている方、是非こちらをご参照下さい [contributing guidelines](CONTRIBUTING.md) 。 またオープンソース版についてはこちらに詳細の記載があります。[development instructions](DEVELOP.md)。
+日本語版はこちら[オープンソースをベースとしたPCF Devの立ち上げ](DEVELOP_ja.md)
 
 # Copyright
 

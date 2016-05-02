@@ -1,6 +1,7 @@
 # PCF Dev
-Japanese version is [here](README_ja.md)
-  
+> Japanese version is [here](README_ja.md)
+> oss pcfdev for cloudstack-vsphere is [here](DEVELOP_CS.md)
+
 PCF Dev is a new distribution of Cloud Foundry designed to run on a developer’s laptop or workstation.  PCF Dev gives application developers the full Cloud Foundry experience in a lightweight, easy to install package.  PCF Dev is intended for application developers who wish to develop and debug their application locally on a full-featured Cloud Foundry.  PCF Dev is also an excellent getting started environment for developers interested in learning and exploring Cloud Foundry.
 
 > More information about the project can be found on the [FAQ](FAQ.md#general-questions).
