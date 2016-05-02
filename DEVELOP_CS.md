@@ -38,6 +38,27 @@ Build options:
 * `-only=` with one or more of the following comma-separated builders: `virtualbox-iso`, `vmware-iso`, and/or `amazon-ebs`
 * `-debug` to build all boxes in debug mode, pausing between each step with SSH login available
 
+### Upload the image as template
+
+It totally depends on which cloudstack environment you are using. However you need to upload the image to create the template. Then you can get the template_id.
+
+Using ovftool to convert the image to ova.
+
+```
+$ cd image
+$ ovftool -st=vmx -tt=ova oss-2016-03-28_2339.vmx oss-2016-03-28_2339.ova
+Opening VMX source: oss-2016-03-28_2339.vmx
+Opening OVA target: oss-2016-03-28_2339.ova
+Writing OVA package: oss-2016-03-28_2339.ova
+Transfer Completed                    
+Completed successfully
+$ mv oss-2016-03-28_2339.ova ../
+```
+
+Then upload it to your cloudstack environment.
+
+See the details in [Working with Templates](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.8/templates.html#vsphere-templates-and-isos) at Cloud Stack Docs.
+
 
 ### Deploying a CloudStack-vSphere PCF Dev box
 
